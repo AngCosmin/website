@@ -1,0 +1,19 @@
+.nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: $text-color;
+  padding: 35px;
+  transition: all .5s ease;
+}
+
+.nav a:hover {
+  color: $main-color;
+}
+
+@media (max-width: 767px) {
+  .nav a {
+    font-size: 1em;
+    padding: 35px 8px 15px 8px;
+    height: 150px;
+  }
+}

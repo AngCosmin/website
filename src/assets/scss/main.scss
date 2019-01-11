@@ -1,0 +1,93 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+$font-family: "Raleway", sans-serif;
+$main-color: #92EAC0;
+$text-color: #373D3F;
+$background-color: #F6F9FC;
+$terminal-background-color: #38434F;
+$card-background-color: #FFFFFF;
+
+@import 'nav';
+@import 'card';
+@import 'terminal';
+@import 'contact';
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  font-family: $font-family;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+}
+
+.hero-logo {
+  color: $main-color;
+  font-size: 4.5em;
+  font-family: monospace;
+  padding: 20% 35px 70px 35px;
+  transition: all .5s ease;
+}
+
+.hero-logo::before {
+  content: "> ";
+}
+
+.hero-description {
+  font-size: 1.3em;
+  padding: 0 35px 70px 35px;
+  text-indent: 35px;
+  text-align: justify;
+}
+
+.section {
+  margin: 70px 0 70px 0;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+@media (max-width: 767px) {
+  .hero-logo {
+    font-size: 1.7em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}

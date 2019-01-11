@@ -1,0 +1,21 @@
+.contact {
+  text-align: center;
+  margin: -35px 0 70px 0;
+}
+
+.contact .email {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.contact .link {
+  color: $main-color;
+  font-weight: bold;
+  padding: 0 7px 0 7px;
+}
+
+@media (max-width: 767px) {
+  .contact .email {
+    font-size: 1em;
+  }
+}

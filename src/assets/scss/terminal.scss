@@ -1,0 +1,125 @@
+.bar {
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  background-color: #e4e3e5;
+  margin: 0 auto;
+  font-family: monospace;
+  padding: auto;
+  float: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+  .button {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    position:relative;
+    transition: all .5s ease;
+  }
+
+  .red {
+    background-color: #f96256;
+    left: -47%;
+    bottom: -20%;
+  }
+
+  .yellow {
+    background-color: #fdbc3d;
+    left: -44%;
+    bottom: 40%;
+  }
+
+  .green {
+    background-color: #33c948;
+    left: -41%;
+    bottom: 99%;
+  }
+}
+
+.screen {
+  background-color: $terminal-background-color;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+  padding: 20px 0 35px 0;
+  box-shadow: 0px 20px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+  line-height: 15px;
+
+  .command {
+    margin: 0;
+    color: $main-color;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: left;
+    position: static;
+    padding-left: 30px;
+  }
+
+  .command::before {
+    color: #FFFFFF;
+    content: "> ";
+  }
+
+  .response {
+    margin: 0 0 25px 0;
+    color: #FFFFFF;
+    font-family: monospace;
+    font-size: 1em;
+    text-align: left;
+    position: static;
+    padding-left: 30px;
+  }
+
+  .response::before {
+    color: #FFFFFF;
+    content: "< ";
+  }
+
+  .array::before {
+    content: "< [";
+  }
+
+  .array::after {
+    content: "]";
+  }
+
+  .array .array-element::before {
+    content: "\"";
+  }
+
+  .array .array-element::after {
+    content: "\"";
+  }
+}
+
+.cursor-white {
+  background: hsla(0, 0%, 97%, .65);
+  animation: blinker 1s linear infinite;
+}
+
+.cursor-main-color {
+  background-color: $main-color;
+  animation: blinker 1s linear infinite;
+}
+
+@media (max-width: 767px) {
+  .screen {
+    font-size: 0.8em;
+  }
+
+  .bar .red {
+    left: -44%;
+    bottom: -20%;
+  }
+
+  .bar .yellow {
+    left: -38%;
+    bottom: 40%;
+  }
+
+  .bar .green {
+    left: -32%;
+    bottom: 99%;
+  }
+}
