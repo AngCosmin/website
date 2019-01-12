@@ -19,32 +19,37 @@
 		
 		<div id="projects" class="section">Projects</div>
 
-		<div class="card">
+		<!-- <div class="card">
 			<div class="header">
 				<h3>Raspberry Pi Robot</h3>
 			</div>
-			<img :src="getBannerPath('project_raspberry.png')" class="banner">
 			
 			<div class="content">
-				<p style="color: rgb(55, 61, 63);">
+				<img :src="getBannerPath('project_raspberry.png')">
+
+				<p>
 					This project is my final bachelor degree project.
 					The robot can be controlled over the internet using a mobile 
 					application made in React Native which connect to a NodeJS server 
 					and communication between them is made using websockets.
 				</p>
-				<p style="color: rgb(55, 61, 63);">
+				<p>
 					Server interface is made using Electron and it display the 
 					status of mobile application and robot application. 
 					Robot application is made in Python and use websockets 
 					to connect to server and OpenCV for ball tracking.
 				</p>
-				<p style="color: rgb(55, 61, 63);">
-					<a href="https://youtu.be/kGCDWxzGauA" target="_blank">DEMO 1</a>
-					/
-					<a href="https://youtu.be/4IdgQTjr4aY" target="_blank">DEMO 2</a>
-					/
-					<a href="https://youtu.be/h1N25ActYt4" target="_blank">DEMO 3</a>
+				<p>
+					You can find some DEMOs here:
+					<a href="https://youtu.be/kGCDWxzGauA" target="_blank">demo 1</a>,
+					<a href="https://youtu.be/4IdgQTjr4aY" target="_blank">demo 2</a>
+					and
+					<a href="https://youtu.be/h1N25ActYt4" target="_blank">demo 3</a>.
 				</p>
+			</div>
+
+			<div class="read-more">
+				Read more
 			</div>
 			
 			<div class="footer">
@@ -52,19 +57,61 @@
 				<span class="skill">Javascript</span>
 				<span class="skill">NodeJS</span>
 				<span class="skill">Websockets</span>
-				<span class="skill">React Native</span>
+				<span class="skill">ReactNative</span>
 				<span class="skill">Electron</span>
 			</div>
+		</div> -->
 
-			<div class="read-more">
-				Read more
-			</div>
-		</div>
+		<Project title="Raspberry Pi Robot" 
+				 :showReadMore="true" 
+				 :technologies="['Python', 'Javascript', 'NodeJS', 'Websockets', 'React Native', 'Electron', 'OpenCV']">
+				 
+			<img :src="getBannerPath('project_raspberry.png')">
 
+			<p>
+				This project is my final bachelor degree project.
+				The robot can be controlled over the internet using a mobile 
+				application made in React Native which connect to a NodeJS server 
+				and communication between them is made using websockets.
+			</p>
+			<p>
+				Server interface is made using Electron and it display the 
+				status of mobile application and robot application. 
+				Robot application is made in Python and use websockets 
+				to connect to server and OpenCV for ball tracking.
+			</p>
+			<p>
+				You can find some DEMOs here:
+				<a href="https://youtu.be/kGCDWxzGauA" target="_blank">demo 1</a>,
+				<a href="https://youtu.be/4IdgQTjr4aY" target="_blank">demo 2</a>
+				and
+				<a href="https://youtu.be/h1N25ActYt4" target="_blank">demo 3</a>.
+			</p>
+		</Project>
 
-		<div class="card"><div class="header"><h3>PC Remote Control</h3></div><img src="/img/project_remote.cf1df817.jpg" class="banner"><div class="content"><p style="color: rgb(55, 61, 63);">This project was made in my first year of university for a competition. I won 3rd place and popularity prize (most voted project by the people who were there). Desktop application is made in C# and the web application is made with HTML, CSS and Javascript. Both of them are connected to a NodeJS server to communicate. You can check these demos:</p><p style="color: rgb(55, 61, 63);"><a href="https://youtu.be/sTcxUzsQRmc" target="_blank">DEMO 1</a>&nbsp;/&nbsp;<a href="https://youtu.be/1u5xv8drxiA" target="_blank">DEMO 2</a>&nbsp;/&nbsp;<a href="https://youtu.be/6QNPjJNgTrA" target="_blank">DEMO 3</a></p></div><div class="footer"><span class="skill">C#</span><span class="skill">Javascript</span><span class="skill">Socket.IO</span><span class="skill">HTML/CSS</span></div></div>
+		<Project title="PC Remote Control" 
+				 :showReadMore="true" 
+				 :technologies="['C#', 'Javascript', 'Socket.IO', 'HTML/CSS']">
+			<img :src="getBannerPath('project_remote.jpg')">
 
-		<div class="card"><div class="header"><h3>Personal website</h3></div><img src="/img/project_website.801f0229.jpg" class="banner"><div class="content"></div><div class="footer"><span class="skill">NodeJS</span><span class="skill">VueJS</span><span class="skill">MongoDB</span></div></div>
+			<p>
+				This project was made in my first year of university for a competition. 
+				I won 3rd place and popularity prize (most voted project by the people 
+				who were there). Desktop application is made in C# and the web application 
+				is made with HTML, CSS and Javascript. Both of them are connected to a 
+				NodeJS server to communicate.
+			</p>
+			<p>
+				You can find some DEMOs here:
+				<a href="https://youtu.be/sTcxUzsQRmc" target="_blank">demo 1</a> 
+				and
+				<a href="https://youtu.be/6QNPjJNgTrA" target="_blank">demo 2</a>
+			</p>
+		</Project>
+
+		<Project title="Personal website" :technologies="['VueJS', 'Typescript']">
+			<img :src="getBannerPath('project_website.jpg')">
+		</Project>
 
 		<div id="contact" class="section">Contact</div>
 
@@ -81,11 +128,13 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import Terminal from "@/components/Terminal.vue";
+import Project from "@/components/Project.vue";
 
 @Component({
 	components: {
-		HelloWorld
+		Terminal,
+		Project,
 	},
 	methods: {
 		getBannerPath (filename) {

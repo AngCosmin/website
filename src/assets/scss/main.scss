@@ -4,6 +4,8 @@
 // Variables
 $font-family: "Raleway", sans-serif;
 $main-color: #92EAC0;
+$link-color: #373D3F;
+$link-hover-color: #92EAC0;
 $text-color: #373D3F;
 $background-color: #F6F9FC;
 $terminal-background-color: #38434F;
@@ -22,11 +24,10 @@ body {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 35px;
+  transition: all 1s linear;
 }
 
 .hero-logo {

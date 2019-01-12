@@ -3,31 +3,32 @@
         <div class="header">
             <h3>{{ title }}</h3>
         </div>
+        
+        <div class="content">
+            <slot></slot>
+        </div>
 
-        <img class="banner" :src="getBannerPath(banner)"/>        
-
-        <div class="content" v-html="description"></div>
-
-        <div class="footer">
-            <span class="skill" v-for="technology in technologies" v-bind:key="technology">
-                {{ technology }}
-            </span>
+        <div v-if="showReadMore" class="read-more">
+            Read more
+        </div>
+        
+        <div v-if="showFooter" class="footer">
+            <span v-for="t in technologies" :key="t" class="skill">{{ t }}</span>
         </div>
     </div>
 </template>
 
-<script>
-    export default {
-        props: [
-            'title',
-            'description',
-            'technologies',
-            'banner',
-        ],
-        methods: {
-            getBannerPath (filename) {
-                return filename ? require(`../assets/img/${filename}`) : ''
-            }
-        }
-    }    
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Project extends Vue {
+    @Prop() private title!: string;
+    @Prop() private technologies!: string[];
+    @Prop() private showReadMore!: boolean;
+
+    get showFooter() {
+        return this.technologies.length > 0
+    }
+}
 </script>
