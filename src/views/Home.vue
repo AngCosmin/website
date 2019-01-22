@@ -19,51 +19,31 @@
 		
 		<div id="projects" class="section">Projects</div>
 
-		<!-- <div class="card">
-			<div class="header">
-				<h3>Raspberry Pi Robot</h3>
-			</div>
-			
-			<div class="content">
-				<img :src="getBannerPath('project_raspberry.png')">
+		<Project title="Emotion based music player" 
+				 :showReadMore="false" 
+				 :technologies="['Python', 'PyQt', 'Microsoft Cognitive Services', 'OpenCV']">
+				 
+			<img :src="getBannerPath('project_emotions.png')">
 
-				<p>
-					This project is my final bachelor degree project.
-					The robot can be controlled over the internet using a mobile 
-					application made in React Native which connect to a NodeJS server 
-					and communication between them is made using websockets.
-				</p>
-				<p>
-					Server interface is made using Electron and it display the 
-					status of mobile application and robot application. 
-					Robot application is made in Python and use websockets 
-					to connect to server and OpenCV for ball tracking.
-				</p>
-				<p>
-					You can find some DEMOs here:
-					<a href="https://youtu.be/kGCDWxzGauA" target="_blank">demo 1</a>,
-					<a href="https://youtu.be/4IdgQTjr4aY" target="_blank">demo 2</a>
-					and
-					<a href="https://youtu.be/h1N25ActYt4" target="_blank">demo 3</a>.
-				</p>
-			</div>
-
-			<div class="read-more">
-				Read more
-			</div>
-			
-			<div class="footer">
-				<span class="skill">Python</span>
-				<span class="skill">Javascript</span>
-				<span class="skill">NodeJS</span>
-				<span class="skill">Websockets</span>
-				<span class="skill">ReactNative</span>
-				<span class="skill">Electron</span>
-			</div>
-		</div> -->
+			<p>
+				This application is a desktop app made with PyQt. It accesses your webcam 
+				and continuously checks for your emotions in background. Using the dominant
+				emotion from last minute and YouTube API, it searches for a song, downloads it
+				and adds it to queue.
+			</p>
+			<p>
+				You can also skip the songs if you don't like them and it will play another song
+				for you. The application also has a history, so you don't have to worry about
+				repeating songs. 
+			</p>
+			<p>
+				You can find there repo
+				<a href="https://github.com/AngCosmin/emotion-based-music-player" target="_blank">here</a>,
+			</p>
+		</Project>
 
 		<Project title="Raspberry Pi Robot" 
-				 :showReadMore="true" 
+				 :showReadMore="false" 
 				 :technologies="['Python', 'Javascript', 'NodeJS', 'Websockets', 'React Native', 'Electron', 'OpenCV']">
 				 
 			<img :src="getBannerPath('project_raspberry.png')">
@@ -90,7 +70,7 @@
 		</Project>
 
 		<Project title="PC Remote Control" 
-				 :showReadMore="true" 
+				 :showReadMore="false" 
 				 :technologies="['C#', 'Javascript', 'Socket.IO', 'HTML/CSS']">
 			<img :src="getBannerPath('project_remote.jpg')">
 
@@ -109,7 +89,7 @@
 			</p>
 		</Project>
 
-		<Project title="Personal website" :technologies="['VueJS', 'Typescript']">
+		<Project title="Personal website" :technologies="['HTML/CSS', 'VueJS', 'Typescript']">
 			<img :src="getBannerPath('project_website.jpg')">
 		</Project>
 
@@ -117,11 +97,12 @@
 
 		<div class="contact">
 			<div class="email">anghelcosminandrei@gmail.com</div>
-
-			<a href="https://github.com/CosminZoRR" class="link"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-			<a href="https://linkedin.com/in/cosminanghel" class="link"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-			<a href="https://facebook.com/ang.cosmin" class="link"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-			<a href="https://instagram.com/angcosmin" class="link"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+			<div class="links">
+				<a href="https://github.com/angcosmin">Github</a>
+				<a href="https://instagram.com/angcosmin">Instagram</a>
+				<a href="https://linkedin.com/in/cosminanghel">LinkedIn</a>
+				<a href="https://facebook.com/ang.cosmin">Facebook</a>
+			</div>
 		</div>	
 	</div>
 </template>

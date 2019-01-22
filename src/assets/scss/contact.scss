@@ -8,14 +8,30 @@
   margin-bottom: 15px;
 }
 
-.contact .link {
-  color: $main-color;
-  font-weight: bold;
-  padding: 0 7px 0 7px;
+.contact {
+  .links {
+    display: flex;
+		flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      text-decoration: none;
+      color: $link-color;
+      padding: 8px;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
   .contact .email {
     font-size: 1em;
+  }
+
+  a {
+    font-size: .75em;
   }
 }
