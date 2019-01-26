@@ -8,7 +8,7 @@
 
         <div class="screen">
             <p class="command">Cosmin.currentLocation</p>
-            <p class="response">Brasov, Romania</p>
+            <p class="response">Bucharest, Romania</p>
 
             <p class="command">Cosmin.currentJob</p>
             <p class="response">Software Developer @ Mondly</p>
@@ -16,9 +16,9 @@
             <p class="command">Cosmin.interests</p>
             <p class="response array">
                 <span class="array-element">Coding</span>,
-                <span class="array-element">Learning</span>
+                <span class="array-element">Learning</span>,
                 <span class="array-element">Electronics</span>,
-                <span class="array-element">Music</span>,
+                <span class="array-element">Robots</span>,
                 <span class="array-element">Driving</span>,
                 <span class="array-element">Traveling</span>
             </p>
