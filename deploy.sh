@@ -1,1 +1,1 @@
-scp -r dist/* root@server:/var/www/html/cosmin.codes
+npm run build && scp -r dist/* root@server:/var/www/html/cosmin.codes
