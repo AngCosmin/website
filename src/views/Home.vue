@@ -37,7 +37,7 @@
 				repeating songs. 
 			</p>
 			<p>
-				You can find there repo
+				You can find the repo
 				<a href="https://github.com/AngCosmin/emotion-based-music-player" target="_blank">here</a>,
 			</p>
 		</Project>
