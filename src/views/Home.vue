@@ -112,7 +112,7 @@
 		</Project>
 
 		<Project title="Personal website" :technologies="['HTML/CSS', 'VueJS', 'Typescript']">
-			<img class="banner" :src="getBannerPath('project_website.jpg')">
+			<img class="banner" :src="getBannerPath('project_website.png')">
 		</Project>
 
 		<div id="contact" class="section">Contact</div>
