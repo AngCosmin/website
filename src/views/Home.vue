@@ -22,8 +22,8 @@
 		<Project title="Emotion based music player" 
 				 :showReadMore="false" 
 				 :technologies="['Python', 'PyQt', 'Microsoft Cognitive Services', 'OpenCV']">
-				 
-			<img :src="getBannerPath('project_emotions.png')">
+	 
+			<img class="banner" :src="getBannerPath('project_emotions.png')">
 
 			<p>
 				This application is a desktop app made with PyQt. It accesses your webcam 
@@ -46,7 +46,7 @@
 				 :showReadMore="false" 
 				 :technologies="['Python', 'Javascript', 'NodeJS', 'Websockets', 'React Native', 'Electron', 'OpenCV']">
 				 
-			<img :src="getBannerPath('project_raspberry.png')">
+			<img class="banner" :src="getBannerPath('project_raspberry.png')">
 
 			<p>
 				This project is my final bachelor degree project.
@@ -76,7 +76,7 @@
 		<Project title="PC Remote Control" 
 				 :showReadMore="false" 
 				 :technologies="['C#', 'Javascript', 'Socket.IO', 'HTML/CSS']">
-			<img :src="getBannerPath('project_remote.jpg')">
+			<img class="banner" :src="getBannerPath('project_remote.jpg')">
 
 			<p>
 				This project was made in my first year of university for a competition. 
@@ -96,7 +96,9 @@
 		<Project title="Hackathon at Mondly" 
 				 :showReadMore="false" 
 				 :technologies="['NodeJS', 'Socket.IO', 'Javascript', 'PHP', 'Laravel']">
-			<img :src="getBannerPath('mondly.jpeg')">
+			<img class="banner" :src="getBannerPath('mondly.jpeg')">
+
+			<p class="center"><img :src="getIcon('trophy.png')"> 2nd place</p>
 
 			<p>
 				Me and my teammate created a multiplayer quiz game for learning new languages. 
@@ -110,7 +112,7 @@
 		</Project>
 
 		<Project title="Personal website" :technologies="['HTML/CSS', 'VueJS', 'Typescript']">
-			<img :src="getBannerPath('project_website.jpg')">
+			<img class="banner" :src="getBannerPath('project_website.jpg')">
 		</Project>
 
 		<div id="contact" class="section">Contact</div>
@@ -139,8 +141,11 @@ import Project from "@/components/Project.vue"
 	},
 	methods: {
 		getBannerPath (filename) {
-			return filename ? require(`../assets/img/${filename}`) : ''
-		}
+			return filename ? require(`@/assets/img/${filename}`) : ''
+		},
+		getIcon (filename) {
+			return filename ? require(`@/assets/icons/${filename}`) : ''
+		},
 	},
 })
 export default class Home extends Vue {}

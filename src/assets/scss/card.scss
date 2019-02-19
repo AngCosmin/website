@@ -24,8 +24,13 @@
 	.content {
 		text-align: justify;
 
-		img {
+		.banner {
 			width: 100%;
+		}
+
+		.center {
+			text-align: center;
+			vertical-align: middle; 
 		}
 
 		p {
