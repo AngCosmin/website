@@ -38,7 +38,7 @@
 			</p>
 			<p>
 				You can find the repo
-				<a href="https://github.com/AngCosmin/emotion-based-music-player" target="_blank">here</a>,
+				<a href="https://github.com/AngCosmin/emotion-based-music-player" target="_blank">here</a>
 			</p>
 		</Project>
 
@@ -67,6 +67,10 @@
 				and
 				<a href="https://youtu.be/h1N25ActYt4" target="_blank">demo 3</a>.
 			</p>
+			<p>
+				You can find the repo
+				<a href="https://github.com/AngCosmin/final-project-robot" target="_blank">here</a>
+			</p>
 		</Project>
 
 		<Project title="PC Remote Control" 
@@ -89,6 +93,22 @@
 			</p>
 		</Project>
 
+		<Project title="Hackathon at Mondly" 
+				 :showReadMore="false" 
+				 :technologies="['NodeJS', 'Socket.IO', 'Javascript', 'PHP', 'Laravel']">
+			<img :src="getBannerPath('mondly.jpeg')">
+
+			<p>
+				Me and my teammate created a multiplayer quiz game for learning new languages. 
+				We had 10 hours and this is what we did: rooms system, chat per room, multiple game modes, 
+				getting points for correct answers and leaderboard.
+			</p>
+			<p>
+				You can find the repo
+				<a href="https://github.com/AngCosmin/mondly-challange" target="_blank">here</a>
+			</p>
+		</Project>
+
 		<Project title="Personal website" :technologies="['HTML/CSS', 'VueJS', 'Typescript']">
 			<img :src="getBannerPath('project_website.jpg')">
 		</Project>
@@ -108,9 +128,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import Terminal from "@/components/Terminal.vue";
-import Project from "@/components/Project.vue";
+import { Component, Vue } from "vue-property-decorator"
+import Terminal from "@/components/Terminal.vue"
+import Project from "@/components/Project.vue"
 
 @Component({
 	components: {
