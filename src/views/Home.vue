@@ -21,7 +21,7 @@
 
 		<Project title="Simple iOS weather app" 
 				 :showReadMore="false" 
-				 :technologies="['Swift', 'Alamofire']">
+				 :technologies="['Swift', 'Alamofire', 'Cocoapods']">
 	 
 			<img class="banner" :src="getBannerPath('project_weather.png')">
 
