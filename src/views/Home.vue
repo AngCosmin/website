@@ -123,7 +123,6 @@
 				getting points for correct answers and leaderboard.
 			</p>
 			<p>
-				<img :src="getIcon('github.png')">
 				You can find the repo
 				<a href="https://github.com/AngCosmin/mondly-challange" target="_blank">here</a>
 			</p>
