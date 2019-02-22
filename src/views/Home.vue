@@ -19,6 +19,23 @@
 		
 		<div id="projects" class="section">Projects</div>
 
+		<Project title="Simple iOS weather app" 
+				 :showReadMore="false" 
+				 :technologies="['Swift', 'Alamofire']">
+	 
+			<img class="banner" :src="getBannerPath('project_weather.png')">
+
+			<p>
+				The application automatically get your location based on location service. 
+				If your location cannot be determined then you can still open a new tab where 
+				you enter city name and then you press a button and now you have the weather for that city.
+			</p>
+			<p>
+				You can find the repo
+				<a href="https://github.com/AngCosmin/ios-weather-app" target="_blank">here</a>
+			</p>
+		</Project>
+
 		<Project title="Emotion based music player" 
 				 :showReadMore="false" 
 				 :technologies="['Python', 'PyQt', 'Microsoft Cognitive Services', 'OpenCV']">
@@ -106,6 +123,7 @@
 				getting points for correct answers and leaderboard.
 			</p>
 			<p>
+				<img :src="getIcon('github.png')">
 				You can find the repo
 				<a href="https://github.com/AngCosmin/mondly-challange" target="_blank">here</a>
 			</p>
