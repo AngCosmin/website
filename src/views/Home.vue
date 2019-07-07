@@ -19,6 +19,28 @@
 		
 		<div id="projects" class="section">Projects</div>
 
+		<Project title="Restaurant ordering system" 
+				 :showReadMore="false" 
+				 :technologies="['Swift', 'Flask', 'MySQL', 'Cocoapods', 'VueJS', 'NodeJS']">
+	 
+			<img class="banner" :src="getBannerPath('project_restaurant.png')">
+
+			<p>
+			24 hours hackathon where we created an iOS application for restaurants where users can scan a QR
+			code placed on the table and the restaurant menu will show and you can buy items and the people at
+			the bar receive your command on a dashboard (website). After they bring you the products you can pay
+			and even split bill with other people at the same table.
+			</p>
+			<p>
+				You can find the iOS repo
+				<a href="https://github.com/AngCosmin/restaurant-ordering-ios" target="_blank">here</a>
+			</p>
+			<p>
+				You can find the backend repo
+				<a href="https://github.com/AngCosmin/restaurant-ordering-backend" target="_blank">here</a>
+			</p>
+		</Project>
+
 		<Project title="Simple iOS weather app" 
 				 :showReadMore="false" 
 				 :technologies="['Swift', 'Alamofire', 'Cocoapods']">
