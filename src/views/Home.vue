@@ -25,6 +25,8 @@
 	 
 			<img class="banner" :src="getBannerPath('project_restaurant.png')">
 
+			<p class="center"><img :src="getIcon('trophy.png')"> 2nd place</p>
+
 			<p>
 			24 hours hackathon where we created an iOS application for restaurants where users can scan a QR
 			code placed on the table and the restaurant menu will show and you can buy items and the people at
@@ -87,6 +89,8 @@
 				 
 			<img class="banner" :src="getBannerPath('project_raspberry.png')">
 
+			<p class="center"><img :src="getIcon('trophy.png')"> 1st place</p>
+
 			<p>
 				This project is my final bachelor degree project.
 				The robot can be controlled over the internet using a mobile 
@@ -98,6 +102,9 @@
 				status of mobile application and robot application. 
 				Robot application is made in Python and use websockets 
 				to connect to server and OpenCV for ball tracking.
+			</p>
+			<p> 
+				I won 1st place using this project in an university competition.
 			</p>
 			<p>
 				You can find some DEMOs here:
@@ -116,6 +123,8 @@
 				 :showReadMore="false" 
 				 :technologies="['C#', 'Javascript', 'Socket.IO', 'HTML/CSS']">
 			<img class="banner" :src="getBannerPath('project_remote.jpg')">
+
+			<p class="center"><img :src="getIcon('trophy.png')"> 3rd place</p>
 
 			<p>
 				This project was made in my first year of university for a competition. 
