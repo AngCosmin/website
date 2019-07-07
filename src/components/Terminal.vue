@@ -35,7 +35,7 @@
                 <span class="array-element">Python</span>,
                 <span class="array-element">MySQL</span>,
                 <span class="array-element">MongoDB</span>,
-                <span class="array-element">HTML/CSS/JS</span>,
+                <span class="array-element">HTML/CSS/JS</span>
             </p>
 
             <p class="command">
