@@ -27,7 +27,7 @@
 				<p v-if="humidity" class="response">{{ humidity.value }}% - Updated {{ humidity.time_ago }}</p>
 				<p v-else class="response">Data unavailable</p>
 				
-				<p class="command" style="margin-top: 250px">
+				<p class="command" style="margin-top: 150px">
 					<span class="cursor-white">&nbsp</span>
 				</p>
 			</div>
