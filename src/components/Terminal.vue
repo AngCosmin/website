@@ -11,7 +11,7 @@
             <p class="response">Bucharest, Romania</p>
 
             <p class="command">Cosmin.currentJob</p>
-            <p class="response">Software Developer @ Mondly</p>
+            <p class="response">iOS Developer @ Tremend</p>
 
             <p class="command">Cosmin.interests</p>
             <p class="response array">
@@ -19,8 +19,8 @@
                 <span class="array-element">Learning</span>,
                 <span class="array-element">Electronics</span>,
                 <span class="array-element">Robots</span>,
-                <span class="array-element">Driving</span>,
-                <span class="array-element">Traveling</span>
+                <span class="array-element">IoT</span>,
+                <span class="array-element">Coffee</span>
             </p>
 
             <p class="command">Cosmin.education</p>
@@ -28,16 +28,14 @@
 
             <p class="command">Cosmin.skills</p>
             <p class="response array">
+                <span class="array-element">iOS Development</span>,
                 <span class="array-element">Laravel/PHP</span>,
-                <span class="array-element">MySQL</span>,
-                <span class="array-element">Python</span>,
-                <span class="array-element">MongoDB</span>,
-                <span class="array-element">HTML/CSS</span>,
-                <span class="array-element">Javascript</span>,
-                <span class="array-element">C++/C#</span>,
-                <span class="array-element">Java</span>,
                 <span class="array-element">Git</span>,
-                <span class="array-element">Linux</span>
+                <span class="array-element">Linux</span>,
+                <span class="array-element">Python</span>,
+                <span class="array-element">MySQL</span>,
+                <span class="array-element">MongoDB</span>,
+                <span class="array-element">HTML/CSS/JS</span>
             </p>
 
             <p class="command">
